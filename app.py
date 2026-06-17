@@ -1,9 +1,5 @@
-from flask import flask
+# app.py
 
-app = flask(__name__)
+VERSION = "1.0.0"
 
-@app.route("/")
-def home():
-  return "python application running"
-
-app.run(host="0.0.0.0". port=5000)
+print("Application Version:", VERSION)
